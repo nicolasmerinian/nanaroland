@@ -1,14 +1,25 @@
 <head>
-  <title>nanaroblog</title>
+  <title>Nanaroblog</title>
 </head>
-
+ 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <div id = "main">
+    <nav>Menu</nav>
+    <header>Header</header>
+    <section id = "content">
+      <ul>
+        {{#each articles}}
+          {{> article}}
+        {{/each}}
+      </ul>
+    </section>
+    <footer>Footer</footer>
+  </div>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+ 
+<template name = "article">
+  <li class = "article">
+    <span class = "text">{{title}}</span>
+    <p class = "text">{{content}}</p>
+  </li>
 </template>

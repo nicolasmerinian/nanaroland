@@ -1,1 +1,59 @@
-/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  background-color: #E30;
+  height: 40px;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 200;
+}
+
+header {
+  background-color: #A20;
+  height: 140px;
+  /*padding: 20px 15px 15px 15px;*/
+  position: relative;
+  top: 40px;
+  width: 100%;
+}
+
+footer {
+  background-color: #A20;
+  height: 140px;
+  /*padding: 20px 15px 15px 15px;*/
+  position: relative;
+  width: 100%;
+}
+
+#content {
+  background-color: #F63;
+  padding-top: 40px;
+}
+
+.article {
+  border: 1px solid black;
+}
